@@ -5,8 +5,8 @@ import "./assets/style.css";
 import Pagination from "./components/Pagination";
 import ProductModal from "./components/ProductModal";
 
-const API_BASE = "https://ec-course-api.hexschool.io/v2";
-const API_PATH = "wei777";
+const API_BASE = import.meta.env.VITE_API_BASE;
+const API_PATH = import.meta.env.VITE_API_PATH;
 
 function App() {
   // modal 相關
